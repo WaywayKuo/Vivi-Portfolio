@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雙薪夫妻育兒溝通之服務設計 | Vivi News</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body style="background-color: #F9F9F9;">
+
+    <nav class="navbar">
+        <a href="index.html" class="logo-link">
+            <div class="logo">
+                <span class="logo-prefix">歡迎來到</span>
+                <span class="logo-main">VIVI NEWS</span>
+            </div>
+        </a>
+        <div class="desktop-menu">
+            <a href="projects.html" class="nav-btn active">專案</a>
+            <button id="copy-email-btn" class="nav-btn" data-email="wayway1028@gmail.com">複製我的信箱</button>
+        </div>
+        <div class="mobile-menu-icon"><span></span><span></span><span></span></div>
+    </nav>
+
+    <main class="container project-detail">
+
+        <div class="breadcrumb">
+            <a href="index.html">首頁</a> &gt; <a href="projects.html">專案</a> &gt; <span>雙薪夫妻育兒溝通之服務設計 - UX</span>
+        </div>
+
+        <section class="pj-hero">
+            <div class="pj-hero-content">
+                <span class="pj-year-tag">2023 UX 案例</span>
+                <h1>雙薪夫妻育兒溝通之<br>服務設計</h1>
+                <p class="pj-desc">透過訪談研究與 設計思考，解決雙薪家庭在角色轉換期的溝通痛點。這是一個關於「非暴力溝通」的數位實驗。</p>
+                <div class="pj-tags">
+                    <span class="pill pill-primary">UX</span>
+                    <span class="pill pill-secondary ui-alert-btn" onclick="alert('尚在更新中')">UI</span>
+                </div>
+            </div>
+            <div class="pj-hero-img">
+                <img src="image/pj-1-image-1.png" alt="Project Hero">
+                <p class="hero-caption">育兒溝通 App</p>
+            </div>
+        </section>
+
+        <section class="pj-section">
+            <div class="section-header">
+                <span class="sec-subtitle">01. RESEARCH</span>
+                <h2>研究<br><span class="subtitle-decorated">發現雙薪夫妻的育兒困境</span></h2>
+                <p>透過前期的背景調查，我們歸納出雙薪家庭面臨的四大核心挑戰，並以此作為訪談的基礎。</p>
+            </div>
+
+            <div class="research-layout">
+                <div class="research-visual">
+                    <img src="image/res-image.jpg" alt="Research Illustration">
+                </div>
+                <div class="research-points">
+                    <div class="point-card">
+                        <h4>1. 角色轉換的失衡</h4>
+                        <p>孩子出生後，夫妻面臨劇烈的角色轉變。雙薪結構下，兩人在「工作者」與「父母」的角色切換中難以取得平衡。</p>
+                    </div>
+                    <div class="point-card">
+                        <h4>2. 負面情緒的骨牌效應</h4>
+                        <p>夫妻間若習慣以負面情緒溝通，這種張力容易無意間轉嫁給孩子，進而影響其性格發展。</p>
+                    </div>
+                    <div class="point-card">
+                        <h4>3. 被壓縮的溝通時間</h4>
+                        <p>上班與育兒佔據了大部分精力，嚴重壓縮了夫妻單獨相處與深度溝通的品質時間。</p>
+                    </div>
+                    <div class="point-card">
+                        <h4>4. 現有市場的缺口</h4>
+                        <p>市面上雖有很多育兒 App，但多著重於「紀錄」或「知識」，缺乏針對「雙薪夫妻溝通議題」的解決方案。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="user-interview">
+                <span class="tag-label">USER RESEARCH</span>
+                <h3>擬定訪談大綱</h3>
+                <p>為了驗證上述假說，我們針對目標族群設計了以下深度訪談問題。</p>
+                <div class="qa-grid-layout">
+                    <div class="qa-col">
+                        <p><span>Q1</span> 下班後在育兒上，夫妻的分工模式為何？</p>
+                        <p><span>Q3</span> 習慣在什麼時間、用什麼方式溝通育兒問題？</p>
+                        <p><span>Q5</span> 夫妻發生爭執時，您會怎麼處理？效果是差和最好的方式？</p>
+                        <p><span>Q7</span> 是否曾經在孩子面前起爭執？是否影響到孩子？</p>
+                        <p><span>Q9</span> 若用 App 溝通時，提供「提示句子」功能，您會想使用嗎？</p>
+                    </div>
+                    <div class="qa-col">
+                        <p><span>Q2</span> 在育兒上最常需要溝通的問題是？(請提三項並說明原因)</p>
+                        <p><span>Q4</span> 育兒溝通當下，若問題解決方法沒取得共識的感受？</p>
+                        <p><span>Q6</span> 您會希望怎麼改善上述的問題？</p>
+                        <p><span>Q8</span> 會想使用有關改善溝通的 App 嗎？原因為何？</p>
+                        <p><span>Q10</span> 夫妻所使用的通訊軟體為何？</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pj-section">
+            <div class="section-header">
+                <span class="sec-subtitle">02. DESIGN THINKING</span>
+                <h2>設計思考<br><span class="subtitle-decorated">人物誌</span></h2>
+                <p>我們訪談了多組雙薪夫妻，並歸納出主要的人物誌 (Persona)。</p>
+            </div>
+
+            <div class="persona-container">
+                <!-- Principal Caregiver -->
+                <div class="persona-card">
+                    <div class="p-left">
+                        <h3>主要照顧者</h3>
+                        <table class="persona-table">
+                            <tr>
+                                <td>年齡</td>
+                                <td>28-42 歲</td>
+                            </tr>
+                            <tr>
+                                <td>狀態</td>
+                                <td>已婚 / 育有 1-2 子</td>
+                            </tr>
+                            <tr>
+                                <td>工作</td>
+                                <td>正職/兼職</td>
+                            </tr>
+                            <tr>
+                                <td>居住地</td>
+                                <td>台灣</td>
+                            </tr>
+                        </table>
+                        <div class="persona-trait-box">
+                            <div class="trait-title">特質</div>
+                            <p>細心 / 敏感 / 應變強 / 重家庭關係 / 對孩子的耐心被磨掉 / 更同理孩子的狀況</p>
+                        </div>
+                    </div>
+                    <div class="p-right">
+                        <div class="p-section">
+                            <h4><span class="icon">📄</span> 簡述</h4>
+                            <p>生活重心轉移至家庭，工作配合育兒作息，承擔大部分照顧與家務責任。作為主要決策者，常因教養觀念差異與伴侶或原生家庭產生摩擦。因育兒瑣事繁多，當下難以溝通，傾向事後冷靜再透過文字訊息表達需求。
+                            </p>
+                        </div>
+                        <div class="p-grid">
+                            <div class="p-col">
+                                <h4><span class="icon">�</span> 痛點 (Pains)</h4>
+                                <ul>
+                                    <li>有孩子後，增加夫妻爭執。</li>
+                                    <li>希望另外一半多幫一點忙。</li>
+                                    <li>卡在還孩子跟伴侶間的爭執時，相對較為痛苦。</li>
+                                </ul>
+                            </div>
+                            <div class="p-col">
+                                <h4><span class="icon">🎯</span> 目標 (Goals)</h4>
+                                <ul>
+                                    <li>減少育兒上的爭執。</li>
+                                    <li>增加溝通上的正向效果。</li>
+                                    <li>讓非主要照顧者理解孩子現況。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Caregiver -->
+                <div class="persona-card">
+                    <div class="p-left">
+                        <h3>非主要照顧者</h3>
+                        <table class="persona-table">
+                            <tr>
+                                <td>年齡</td>
+                                <td>32-47 歲</td>
+                            </tr>
+                            <tr>
+                                <td>狀態</td>
+                                <td>已婚 / 育有 1-2 子</td>
+                            </tr>
+                            <tr>
+                                <td>工作</td>
+                                <td>正職</td>
+                            </tr>
+                            <tr>
+                                <td>居住地</td>
+                                <td>台灣</td>
+                            </tr>
+                        </table>
+                        <div class="persona-trait-box">
+                            <div class="trait-title">特質</div>
+                            <p>有想法 / 在意面子 / 應變能力好 / 重伴侶關係 / 保持心態樂觀 / 尊重主要照顧者</p>
+                        </div>
+                    </div>
+                    <div class="p-right">
+                        <div class="p-section">
+                            <h4><span class="icon">📄</span> 簡述</h4>
+                            <p>肩負家庭經濟重擔，因工時長無法兼顧育兒細節，日常照顧多由伴侶主導。因不熟悉流程，協助時常因反覆詢問或擅自行動而引發衝突，希望能建立相互尊重的合作模式。此外，因陪伴時間少對孩子較生疏，渴望在工作之餘了解孩子現況，縮短與主要照顧者的認知落差。
+                            </p>
+                        </div>
+                        <div class="p-grid">
+                            <div class="p-col">
+                                <h4><span class="icon">�</span> 痛點 (Pains)</h4>
+                                <ul>
+                                    <li>有孩子後，夫妻為育兒爭執。</li>
+                                    <li>希望在育兒事宜做協助者。</li>
+                                    <li>被主要照顧者指定用他的方式育兒。</li>
+                                </ul>
+                            </div>
+                            <div class="p-col">
+                                <h4><span class="icon">🎯</span> 目標 (Goals)</h4>
+                                <ul>
+                                    <li>了解孩子的現況和需求。</li>
+                                    <li>取得第三方給予意見或方法。</li>
+                                    <li>找到與主要照顧者良好的溝通方式。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pj-section">
+            <div class="journey-card">
+                <div class="section-header">
+                    <h3><span class="subtitle-decorated">旅程地圖</span></h3>
+                    <p>我們訪談了多組雙薪夫妻，並歸納出主要的人物誌 (Persona) 的一日旅程。</p>
+                </div>
+
+                <div class="journey-title-bar">雙薪育兒旅程對照圖：主要與非主要照顧者</div>
+
+                <div class="journey-scroll-wrapper">
+                    <div class="journey-grid">
+                        <div class="grid-head sticky-corner">育兒時段安排</div>
+                        <div class="grid-head">準備下班時段</div>
+                        <div class="grid-head">照顧孩子 & 晚餐</div>
+                        <div class="grid-head">洗澡 & 協助作業</div>
+                        <div class="grid-head">親子時間 & 睡覺</div>
+                        <div class="grid-head">夫妻放鬆時間</div>
+                        <div class="grid-head">個人時段 & 睡覺</div>
+                        <div class="grid-head">上班前時段</div>
+
+                        <div class="row-label primary-label">
+                            主要照顧者<br><span>(忙碌/責任)</span>
+                        </div>
+                        <div class="grid-cell">
+                            <div class="j-item">
+                                <span class="j-tag act-p">行為</span>
+                                <p>趕著準時閃人，準備接孩</p>
+                            </div>
+                            <div class="j-item">
+                                <span class="j-tag th-p">想法</span>
+                                <p>拜託老闆別這時候加工作</p>
+                            </div>
+                        </div>
+                        <div class="grid-cell">
+                            <div class="j-item">
+                                <span class="j-tag act-p">行為</span>
+                                <p>催孩子吃飯，注意營養</p>
+                            </div>
+                            <div class="j-item">
+                                <span class="j-tag th-p">想法</span>
+                                <p>為什麼都不講不聽？好累</p>
+                            </div>
+                        </div>
+                        <div class="grid-cell">
+                            <div class="j-item">
+                                <span class="j-tag act-p">行為</span>
+                                <p>檢查作業，SOP流程控管</p>
+                            </div>
+                            <div class="j-item">
+                                <span class="j-tag th-p">想法</span>
+                                <p>隊友不要亂插手破壞規矩</p>
+                            </div>
+                        </div>
+                        <div class="grid-cell">
+                            <div class="j-item">
+                                <span class="j-tag act-p">行為</span>
+                                <p>唸故事書，哄睡儀式</p>
+                            </div>
+                            <div class="j-item">
+                                <span class="j-tag th-p">想法</span>
+                                <p>趕快睡，媽媽想下班</p>
+                            </div>
+                        </div>
+                        <div class="grid-cell">
+                            <div class="j-item">
+                                <span class="j-tag act-p">行為</span>
+                                <p>滑手機，吃宵夜，放空</p>
+                            </div>
+                            <div class="j-item">
+                                <span class="j-tag th-p">想法</span>
+                                <p>終於不用講話了</p>
+                            </div>
+                        </div>
+                        <div class="grid-cell">
+                            <div class="j-item">
+                                <span class="j-tag act-p">行為</span>
+                                <p>半夜起來餵奶或哄睡驚醒的孩子</p>
+                            </div>
+                            <div class="j-item">
+                                <span class="j-tag th-p">想法</span>
+                                <p>睡眠一直被中斷</p>
+                            </div>
+                        </div>
+                        <div class="grid-cell">
+                            <div class="j-item">
+                                <span class="j-tag act-p">行為</span>
+                                <p>像打仗一樣準備出門</p>
+                            </div>
+                            <div class="j-item">
+                                <span class="j-tag th-p">想法</span>
+                                <p>快遲到了！</p>
+                            </div>
+                        </div>
+
+                        <div class="row-label secondary-label">
+                            非主要照顧者<br><span>(支援/距離)</span>
+                        </div>
+                        <div class="grid-cell bg-light-teal">
+                            <div class="j-item">
+                                <span class="j-tag act-s">行為</span>
+                                <p>處理客戶急件，加班中</p>
+                            </div>
+                            <div class="j-item">
+                                <span class="j-tag th-s">想法</span>
+                                <p>業績壓力大，今天又要晚回</p>
+                            </div>
+                        </div>
+                        <div class="grid-cell bg-light-teal">
+                            <div class="j-item">
+                                <span class="j-tag act-s">行為</span>
+                                <p>試著餵飯，或在旁邊滑手機</p>
+                            </div>
+                            <div class="j-item">
+                                <span class="j-tag th-s">想法</span>
+                                <p>老婆臉色不好，我該做什麼？</p>
+                            </div>
+                        </div>
+                        <div class="grid-cell bg-light-teal">
+                            <div class="j-item">
+                                <span class="j-tag act-s">行為</span>
+                                <p>幫忙洗澡但弄得溼答答</p>
+                            </div>
+                            <div class="j-item">
+                                <span class="j-tag th-s">想法</span>
+                                <p>我只想幫忙，幹嘛一直唸</p>
+                            </div>
+                        </div>
+                        <div class="grid-cell bg-light-teal">
+                            <div class="j-item">
+                                <span class="j-tag act-s">行為</span>
+                                <p>陪小孩玩遊戲，或是幫忙哄睡</p>
+                            </div>
+                            <div class="j-item">
+                                <span class="j-tag th-s">想法</span>
+                                <p>難得陪孩子，開心就好</p>
+                            </div>
+                        </div>
+                        <div class="grid-cell bg-light-teal">
+                            <div class="j-item">
+                                <span class="j-tag act-s">行為</span>
+                                <p>想找伴侶聊天分享工作</p>
+                            </div>
+                            <div class="j-item">
+                                <span class="j-tag th-s">想法</span>
+                                <p>此時，伴侶不一定會想理我</p>
+                            </div>
+                        </div>
+                        <div class="grid-cell bg-light-teal">
+                            <div class="j-item">
+                                <span class="j-tag act-s">行為</span>
+                                <p>呼呼大睡</p>
+                            </div>
+                            <div class="j-item">
+                                <span class="j-tag th-s">想法</span>
+                                <p>好累，終於能休息</p>
+                            </div>
+                        </div>
+                        <div class="grid-cell bg-light-teal">
+                            <div class="j-item">
+                                <span class="j-tag act-s">行為</span>
+                                <p>協助買早餐，或是送孩子上學</p>
+                            </div>
+                            <div class="j-item">
+                                <span class="j-tag th-s">想法</span>
+                                <p>今天也要加油</p>
+                            </div>
+                        </div>
+
+                        <div class="row-label touch-label">
+                            互動接觸點
+                        </div>
+                        <div class="touch-cell">傳訊息確認晚餐</div>
+                        <div class="touch-cell warn">
+                            標準衝突<br><span>(餵飯/規矩)</span>
+                        </div>
+                        <div class="touch-cell warn">
+                            介入干擾<br><span>(SOP被打亂)</span>
+                        </div>
+                        <div class="touch-cell">
+                            分工合作<br><span>(一人哄睡一人收)</span>
+                        </div>
+                        <div class="touch-cell info">
+                            情感交流<br><span>(一起追劇)</span>
+                        </div>
+                        <div class="touch-cell">互不干擾</div>
+                        <div class="touch-cell info">
+                            接力合作<br><span>(送上學)</span>
+                        </div>
+
+                        <div class="row-label emotion-label">
+                            曲線情緒
+                            <div class="emotion-legend">
+                                <span>😀 開心</span>
+                                <span>😐 平靜</span>
+                                <span>😫 難受</span>
+                            </div>
+                        </div>
+                        <div class="emotion-chart-cell">
+                            <img src="image/emotion line-image.png" alt="Emotion Curve">
+                        </div>
+
+                    </div>
+                </div>
+                <p class="scroll-hint">← 左右滑動觀看完整旅程 →</p>
+            </div>
+        </section>
+
+        <section class="pj-section bg-gray">
+            <div class="section-header">
+                <span class="sec-subtitle">03. APP FEATURES & PLANNING</span>
+                <h2>App 功能與規劃</h2>
+            </div>
+
+            <!-- New Planning Section Structure -->
+            <div class="planning-section-card">
+                <h3><span class="subtitle-decorated">關鍵的服務規劃</span></h3>
+                <p class="planning-desc">基於雙薪夫妻的育兒痛點，將產品能全方位覆蓋從「資訊獲取」到「深度互動」的需求。</p>
+
+                <div class="planning-grid">
+                    <!-- Card 1 -->
+                    <div class="plan-card">
+                        <div class="card-header">
+                            <h4>增強伴侶的深度互動</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul>
+                                <li>溝通引導功能</li>
+                                <li class="text-red">非暴力溝通提示</li>
+                                <li class="text-red">數據化溝通提示</li>
+                                <li>文章收藏分享交流</li>
+                                <li class="text-red">伴侶共編收藏的知識</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="plan-card">
+                        <div class="card-header">
+                            <h4>多元資訊和系統整合</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul>
+                                <li>相關文章 (收藏/讚)</li>
+                                <li>社群留言板</li>
+                                <li class="text-red">AI 智能輔助內容</li>
+                                <li class="text-red">專業人士見解</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="plan-card">
+                        <div class="card-header">
+                            <h4>精準專業的搜尋與詢問</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul>
+                                <li>搜尋相關文章</li>
+                                <li>搜尋社群 Q&A</li>
+                                <li class="text-red">尋求專業人士</li>
+                                <li class="text-red">先跟AI進行詢問</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 Insight -->
+                    <div class="plan-card dark-insight">
+                        <div class="card-body">
+                            <h4><i class="fas fa-lightbulb"></i> 設計洞察關鍵</h4>
+                            <p>在規劃關鍵的服務時，需對應訪談整理出的結果，核心在於如何將「育兒知識」、「AI輔助」、「數據輔助」與「專家介入」引入功能規劃中，滿足雙薪夫妻在育兒溝通上的需求。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-structure-container">
+                <div class="structure-header">
+                    <h3>App核心架構</h3>
+                    <div class="header-underline"></div>
+                    <p>基於使用者研究，我將功能模組化為四大核心區域，確保雙薪家庭能快速找到所需工具。</p>
+                </div>
+                <div class="structure-content">
+                    <div class="structure-visual">
+                        <img src="image/app area-image.png" alt="Couple Illustration">
+                    </div>
+                    <div class="structure-cards">
+                        <!-- Card 1 -->
+                        <div class="struct-card">
+                            <div class="s-card-head">首頁-文章</div>
+                            <div class="s-card-body">
+                                <ul>
+                                    <li>相關的專業知識</li>
+                                    <li>搜尋相關知識</li>
+                                    <li>文章收藏</li>
+                                    <li>文章分享</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="struct-card">
+                            <div class="s-card-head">社群</div>
+                            <div class="s-card-body">
+                                <ul>
+                                    <li>向有經驗者提問</li>
+                                    <li>參考第三方回答</li>
+                                    <li>搜尋相關經驗</li>
+                                    <li>經驗分享專區</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="struct-card">
+                            <div class="s-card-head">聊聊</div>
+                            <div class="s-card-body">
+                                <ul>
+                                    <li>數據溝通提示</li>
+                                    <li>非暴力溝通</li>
+                                    <li>AI 悄悄話</li>
+                                    <li>搜尋專家諮詢</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="struct-card">
+                            <div class="s-card-head">會員</div>
+                            <div class="s-card-body">
+                                <ul>
+                                    <li>個人資料</li>
+                                    <li>伴侶圖書館</li>
+                                    <li>提問紀錄</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pj-section">
+            <div class="section-header">
+                <h2>流暢直觀的核心操作體驗</h2>
+                <p>透過扁平化的層級設計，我們確保用戶在「獲取資訊」與「深度溝通」之間能無縫切換。</p>
+            </div>
+
+            <div class="interaction-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="chat">聊聊溝通 (核心)</button>
+                    <button class="tab-btn" data-tab="home">首頁文章</button>
+                    <button class="tab-btn" data-tab="community">社群互動</button>
+                    <button class="tab-btn" data-tab="member">會員成長</button>
+                </div>
+
+                <div class="flow-path-hint">核心路徑：從一般對話到 AI 輔助的情緒轉化</div>
+
+                <div class="tab-content active" id="chat">
+                    <div class="flow-diagram">
+                        <span>聊天列表</span> &rarr; <span>對話視窗</span> &rarr; <span>情緒偵測/引導</span> &rarr; <span>發送訊息</span>
+                    </div>
+
+                </div>
+
+                <div class="tab-content" id="home">
+                    <div class="flow-diagram">
+                        <span>首頁推薦</span> &rarr; <span>文章閱讀</span> &rarr; <span>收藏/分享</span>
+                    </div>
+
+                </div>
+
+                <div class="tab-content" id="community">
+                    <div class="flow-diagram">
+                        <span>社群列表</span> &rarr; <span>話題討論</span> &rarr; <span>發表意見</span>
+                    </div>
+
+                </div>
+
+                <div class="tab-content" id="member">
+                    <div class="flow-diagram">
+                        <span>個人頁面</span> &rarr; <span>成長紀錄</span> &rarr; <span>勳章成就</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="pj-section bg-light-blue">
+            <div class="section-header">
+                <span class="sec-subtitle">04. KEY INSIGHTS</span>
+                <h2>關鍵洞察</h2>
+            </div>
+
+            <div class="insight-row">
+                <div class="insight-img">
+                    <img src="image/smartphone-image.png" alt="建立共識的知識庫">
+                </div>
+                <div class="insight-text">
+                    <h3>I. 建立共識的知識庫</h3>
+                    <p>爭吵往往源於觀念不合。我們設計了「伴侶圖書館」，當一方收藏文章時，另一方也能看見。讓專知識成為雙方的溝通橋樑，而非說教的工具。</p>
+                    <div class="tags"><span class="pill">#專業文章</span><span class="pill">#共同收藏</span></div>
+                </div>
+            </div>
+
+            <div class="insight-row reverse">
+                <div class="insight-img">
+                    <img src="image/smartphone-image2.png" alt="AI Chat UI">
+                </div>
+                <div class="insight-text">
+                    <h3>II. AI 情緒教練與非暴力溝通</h3>
+                    <p>這不只是聊天室，更是情緒緩衝區。</p>
+                    <ul class="insight-list">
+                        <li><strong>非暴力溝通提示</strong><br>系統偵測攻擊性字眼，主動提示「換句話說」的選項。</li>
+                        <li><strong>數位化溝通建議</strong><br>用圖表呈現雙方的情緒佔比，讓「感覺」變成客觀的「數據」。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- New SUS Section moved here -->
+            <div class="sus-layout">
+                <div class="sus-left">
+                    <h3>III. SUS易用性測試</h3>
+                    <p>透過 31 份有效問卷進行 SUS (System Usability Scale) 易用性測試。結果顯示，無論性別，使用者對於 App 的接受度皆達到良好標準。</p>
+
+                    <div class="sus-chart">
+                        <div class="score-row">
+                            <span>SUS 總評分</span>
+                            <div class="progress-bar">
+                                <div class="fill" style="width: 80%;"></div>
+                            </div>
+                            <span class="score">80 / 100 <br><span class="grade-text">(Grade B)</span></span>
+                        </div>
+                        <div class="score-row">
+                            <span>男性樣本均分</span>
+                            <div class="progress-bar">
+                                <div class="fill blue" style="width: 81%;"></div>
+                            </div>
+                            <span class="score">81.25</span>
+                        </div>
+                        <div class="score-row">
+                            <span>女性樣本均分</span>
+                            <div class="progress-bar">
+                                <div class="fill orange" style="width: 78%;"></div>
+                            </div>
+                            <span class="score">78.97</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sus-right">
+                    <div class="sus-quote">
+                        <blockquote>
+                            「T檢定顯示兩者之間無顯著差異 (P>0.05)。這證明了我們的設計不僅解決了女性照顧者的焦慮，也成功引導了男性參與育兒溝通，達到了雙贏的局面。」
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <button id="back-to-top" class="back-to-top" aria-label="回到頂部">
+        ↑
+    </button>
+
+    <footer>
+        <p>Copyright © 2025 Vivi. All rights reserved. 隱私權政策.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mobile Menu Toggle
+            const menuIcon = document.querySelector('.mobile-menu-icon');
+            const desktopMenu = document.querySelector('.desktop-menu');
+
+            if (menuIcon && desktopMenu) {
+                menuIcon.addEventListener('click', function () {
+                    desktopMenu.classList.toggle('active');
+                });
+            }
+
+            // 1. 複製信箱功能
+            const copyBtn = document.getElementById('copy-email-btn');
+            if (copyBtn) {
+                copyBtn.addEventListener('click', function () {
+                    const email = copyBtn.getAttribute('data-email');
+                    navigator.clipboard.writeText(email).then(function () {
+                        const originalText = copyBtn.innerText;
+                        copyBtn.innerText = "已複製！";
+                        copyBtn.style.background = "#4548D3";
+                        copyBtn.style.color = "#F9F9F9";
+                        setTimeout(function () {
+                            copyBtn.innerText = originalText;
+                            copyBtn.style.background = "";
+                            copyBtn.style.color = "";
+                        }, 2000);
+                    });
+                });
+            }
+
+            // 2. Tab 切換功能 (核心操作體驗)
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // 移除所有 active 狀態
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+
+                    // 設定當前 active
+                    btn.classList.add('active');
+                    const targetId = btn.getAttribute('data-tab');
+                    document.getElementById(targetId).classList.add('active');
+                });
+            });
+
+            // 3. Simple Intersection Observer for Fade-in Animations
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target); // Only animate once
+                    }
+                });
+            }, observerOptions);
+
+            const sections = document.querySelectorAll('section, .pj-section, .research-grid, .planning-grid');
+            sections.forEach(section => {
+                section.classList.add('fade-in-section');
+                observer.observe(section);
+            });
+
+            // 4. Back to Top Button
+            const backToTopBtn = document.getElementById('back-to-top');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopBtn.classList.add('visible');
+                } else {
+                    backToTopBtn.classList.remove('visible');
+                }
+            });
+
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

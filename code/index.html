@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivi News - UI/UX Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="bg-watermark"></div>
+    <div class="bg-watermark-sub"></div>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo-link">
+            <div class="logo">
+                <span class="logo-prefix">歡迎來到</span>
+                <span class="logo-main">VIVI NEWS</span>
+            </div>
+        </a>
+
+        <div class="desktop-menu">
+            <a href="projects.html" class="nav-btn">專案</a>
+
+            <button id="copy-email-btn" class="nav-btn" data-email="wayway1028@gmail.com">複製我的信箱</button>
+        </div>
+
+        <div class="mobile-menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-image">
+                <img src="image/Anchor.png" alt="Vivi Anchor">
+            </div>
+            <div class="hero-text">
+                <p class="sub-title">Vivi 的 UI/UX 設計動機</p>
+                <h1>以使用者為中心解決痛點，<br>做出有規劃性的設計</h1>
+            </div>
+        </section>
+
+        <section class="projects-grid">
+            <a href="project-1.html" class="card project-card">
+                <div class="card-header">
+                    <span class="tag">UX 案例</span>
+                    <h3>雙薪夫妻育兒溝通之服務設計</h3>
+                    <p class="desc">chatGPT未上市時，我已想到運用了創意溝通解決問題。</p>
+                </div>
+                <div class="card-image">
+                    <img src="image/pj-1-image-1.png" alt="App Design">
+                </div>
+            </a>
+
+            <div class="card project-card">
+                <div class="card-header">
+                    <span class="tag">UI 案例</span>
+                    <h3>流暢的 UI 與數據儀表板設計</h3>
+                    <p class="desc">先上線最小可行版本，持續優化與迭代UIUX，並設計數據面板。</p>
+                </div>
+                <div class="card-image center-img">
+                    <img src="image/pj-2-image-1.png" alt="Dashboard Design">
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="info-grid">
+                <div class="info-item">
+                    <h4 class="info-title">Vivi的設計工作年資</h4>
+                    <div class="years-display">8-9 <span>years</span></div>
+                    <p class="info-desc">數載年設計經驗淬鍊</p>
+                </div>
+
+                <div class="info-item">
+                    <h4 class="info-title">核心優勢</h4>
+                    <ul class="info-list">
+                        <li>擁有 UIUX、產品、平面，多種設計經驗。</li>
+                        <li>我專注於構建可擴展的設計系統，並將商業目標轉化為優雅的數位體驗。</li>
+                    </ul>
+                </div>
+
+                <div class="info-item">
+                    <h4 class="info-title">雙碩士學位</h4>
+                    <p class="info-desc">我擁有跨領域背景，分別取得了工業設計與美術造型設計的碩士學位。</p>
+                </div>
+
+                <div class="contact-card-wrapper">
+                    <div class="contact-card">
+                        <h3>聯絡我<br>期待成為您的夥伴！</h3>
+                        <a href="mailto:wayway1028@gmail.com" class="email-link">Email Me &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © 2025 Vivi. All rights reserved. 隱私權政策.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mobile Menu Toggle
+            const menuIcon = document.querySelector('.mobile-menu-icon');
+            const desktopMenu = document.querySelector('.desktop-menu');
+
+            if (menuIcon && desktopMenu) {
+                menuIcon.addEventListener('click', function () {
+                    desktopMenu.classList.toggle('active');
+                });
+            }
+
+            const copyBtn = document.getElementById('copy-email-btn');
+
+            if (copyBtn) {
+                copyBtn.addEventListener('click', function () {
+                    const email = copyBtn.getAttribute('data-email');
+
+                    navigator.clipboard.writeText(email).then(function () {
+                        const originalText = copyBtn.innerText;
+                        copyBtn.innerText = "已複製！";
+                        copyBtn.style.background = "#4548D3";
+                        copyBtn.style.color = "#F9F9F9";
+
+                        setTimeout(function () {
+                            copyBtn.innerText = originalText;
+                            copyBtn.style.background = "";
+                            copyBtn.style.color = "";
+                        }, 2000);
+                    });
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+/* =========================================
+   11. Entry Animations
+   ========================================= */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Staggered animation for grid items */
+.research-card,
+.project-card,
+.plan-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: none;
+    /* Controlled by JS adding class */
+}
+
+/* We will reuse the is-visible class for these as well via JS */
+.is-visible .research-card,
+.is-visible .project-card,
+.is-visible .plan-card {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.is-visible .research-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.is-visible .research-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.is-visible .research-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.is-visible .research-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
