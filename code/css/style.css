@@ -1579,6 +1579,61 @@ footer {
     padding-right: 20px;
 }
 
+/* Mobile Enhancement for Journey Map */
+@media (max-width: 768px) {
+    .journey-card {
+        padding: 20px;
+        /* Reduce heavy padding on mobile */
+        width: auto;
+        /* Reset width hacks if needed for mobile container flow */
+        margin-left: 0;
+        margin-right: 0;
+        left: auto;
+        right: auto;
+    }
+
+    .journey-scroll-wrapper {
+        margin-right: -20px;
+        /* Bleed to edge */
+        margin-left: -20px;
+        /* Bleed to left edge too */
+        padding-right: 20px;
+        /* Compensate */
+        padding-left: 20px;
+        /* Compensate */
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .journey-grid {
+        grid-template-columns: 100px repeat(7, 150px);
+        /* Narrower columns for mobile */
+        min-width: 0;
+        /* Let grid define width */
+        width: max-content;
+        /* Fit content */
+    }
+
+    .grid-head,
+    .row-label {
+        font-size: 0.85rem;
+        padding: 10px 4px;
+    }
+
+    .j-tag {
+        font-size: 0.75rem;
+    }
+
+    /* Disable sticky on mobile as per user request */
+    .sticky-corner,
+    .row-label {
+        position: static !important;
+        box-shadow: none;
+        /* Remove shadow since it's not floating */
+        border-right: 1px solid #eee;
+        /* Add border to separate */
+    }
+}
+
 /* --- 表頭 (時間段) --- */
 .grid-head {
     background: #fff;
@@ -1602,9 +1657,8 @@ footer {
     box-shadow: 4px 0 10px rgba(0, 0, 0, 0.02);
     /* Match row label shadow */
     color: #1d1d1f;
-    background: #4A4A4A;
-    /* Fallback or temporary, waiting for overwrite */
-    background: #eee;
+    background: #fff;
+    /* Solid white as requested */
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
@@ -1619,9 +1673,8 @@ footer {
     font-size: 1rem;
     position: sticky;
     left: 0;
-    background: rgba(255, 255, 255, 0.95);
-    /* Semi-transparent sticky */
-    backdrop-filter: blur(10px);
+    background: #fff;
+    /* Solid white as requested */
     z-index: 10;
     box-shadow: 4px 0 10px rgba(0, 0, 0, 0.02);
     border-radius: 0 12px 12px 0;
@@ -1794,26 +1847,30 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: absolute;
-    top: 60px;
-    /* Start below the text */
-    bottom: 0;
-    left: 0;
-    right: 0;
+    height: 200px;
+    /* Match chart height */
+    width: 100%;
+    margin-top: 10px;
+    /* Reduced margin */
+    padding: 0;
     font-size: 0.85rem;
     color: #666;
     align-items: center;
-    pointer-events: none;
-    /* Let clicks pass through */
+    pointer-events: auto;
+}
+
+.emotion-chart-cell {
+    padding-top: 60px;
+    /* Push chart down to align with legend (below text) */
 }
 
 .emotion-chart-cell img {
     width: 100%;
     height: auto;
     display: block;
-    /* 這裡需要一張去背的波浪線圖，高度約 150px */
-    min-height: 150px;
-    object-fit: cover;
+    min-height: 200px;
+    object-fit: fill;
+    /* Allow stretch if needed */
 }
 
 /* App Structure Redesign */
